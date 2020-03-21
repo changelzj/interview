@@ -5,10 +5,10 @@ package org.example.interview.singleton;
  */
 public class Singleton2 {
     
-    private static Singleton2 singleton = null;
+    private static volatile Singleton2 singleton = null;
     
     private Singleton2() {
-        
+        System.out.println("Singleton2 构造");
     }
     
     public static Singleton2 getInstance() {
